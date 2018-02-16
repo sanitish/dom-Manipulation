@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, td {
+    border: 1px solid black;
+}
+</style>
+</head>
+<body>
+<div id='myInfo'>
+
+</div>
+
+<script>
+
+
+  var myObj;
+myObj = [{ "type":"text",
+"data": 25},
+{ "type":"ppt",
+"data": 15},
+{ "type":"doc",
+"data": 125},{ "type":"image",
+"data": 35},{ "type":"imaz",
+"data": 135}];
+
+var labels = myObj.map((val)=>{
+  return val.type;
+});
+console.log(labels);
+document.getElementById('myInfo').innerHTML = "<div id='myInfo'>"+labels+"</div>";
+
+
+</script>
+
+</body>
+</html>
